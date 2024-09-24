@@ -13,11 +13,6 @@ body {
     overflow: overlay;
 }
 
-.barrita{
-    border: #333 1px solid;
-    margin-bottom: 20px;
-}
-
 .section {
     display: flex;
     justify-content: center;
@@ -53,67 +48,32 @@ body {
     color: #333;
 }
 
-.form-group {
+@media (max-width: 600){
+
+.Container {
+    background-color: #f8f8f8;
+    padding: 40px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
     width: 100%;
-    margin-bottom: 20px;
+    height: 100%;
+    backdrop-filter: blur(1px);
+    
 }
 
-.form-input {
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-.form-input:focus {
-    border-color: rgb(34, 39, 85);
-    outline: none;
-}
-
-
-.form-btn {
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 15px;
-    border: white 1px solid;
-    border-radius: 5px;
-    background-color: #2e5a97;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-family: 'Kanit', sans-serif;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.form-btn:hover {
-    background-color: white;
-    color: #2e5a97;
-    border: #2e5a97 1px solid;
-}
-
-
-.reg-btn {
+.Contenido {
     display: flex;
-    margin-bottom: 10px;
-    width: 92%;
-    padding: 15px;
-    justify-content: center;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: white;
-    color: #2e5a97;
-    border: #2e5a97 1px solid;
-    font-size: 18px;
-    font-family: 'Kanit', sans-serif;
-    cursor: pointer;
-    transition: 0.3s ease;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-.reg-btn:hover {
-    background-color: #2e5a97   ;
-    color: white;
+.Title {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
 }
